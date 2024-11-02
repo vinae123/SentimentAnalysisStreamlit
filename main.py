@@ -17,7 +17,7 @@ def preprocess_text(text):
     padded_review = sequence.pad_sequences([encoded_review],maxlen=500)
     return padded_review
 
-model = load_model('ANN_new\SimpleRNN\simple_rnn_imdb.h5')
+model = load_model('simple_rnn_imdb.h5')
     
 def predict_sentiment(review):
     preprocess_input = preprocess_text(review)
